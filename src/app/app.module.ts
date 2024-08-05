@@ -15,6 +15,7 @@ import { HeaderComponent } from "./header/header.component";
 import { PostListComponent } from "./posts/post-list/post-list.component";
 //import { PostsComponent } from './posts/posts.component';
 import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
+import {AppRoutingModule} from "./app-routing.module";
 
 @NgModule({
   declarations: [
@@ -22,10 +23,10 @@ import { provideAnimationsAsync } from '@angular/platform-browser/animations/asy
     PostCreateComponent,
     HeaderComponent,
     PostListComponent,
-    //PostsComponent
   ],
   imports: [
     BrowserModule,
+    AppRoutingModule,
     FormsModule,
     BrowserAnimationsModule,
     MatInputModule,
@@ -33,7 +34,6 @@ import { provideAnimationsAsync } from '@angular/platform-browser/animations/asy
     MatButtonModule,
     MatToolbarModule,
     MatExpansionModule,
-
   ],
   providers: [
     provideAnimationsAsync(),
